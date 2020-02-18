@@ -22,10 +22,13 @@ var prezzoOver = ( prezzoTot - scontoQuaranta );
 
 if ( eta < 18 ) {
     console.log( Math.round( prezzoMinor ) );
+    document.getElementById('java').innerHTML = ( Math.round( prezzoMinor ) );
 }
 else if ( eta > 65 ) {
     console.log( Math.round( prezzoOver ) );
+    document.getElementById('java').innerHTML = ( Math.round( prezzoOver ) );
 }
 else {
     console.log( Math.round(prezzoTot) );
+    document.getElementById('java').innerHTML = ( Math.round( prezzoTot ) );
 }
